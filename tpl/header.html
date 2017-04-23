@@ -1,0 +1,15 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+                <span class="navbar-text ">LinkedIn AngularJS example</span>
+				<div  ng-hide="userprofile == null" ng-model="debug">
+                    <div class="navbar-right">
+						<span class="navbar-text ">
+	              			Logged in as <a ng-href="{{userprofile.publicProfileUrl}}" class="navbar-link">{{userprofile.firstName}} {{userprofile.lastName}}</a>
+	            		</span>
+	            		<button class="btn btn-mini btn-inverse navbar-btn" style="margin-top:0px;" type="button" ng-click="logoutLinkedIn()">Logout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

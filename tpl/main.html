@@ -1,0 +1,61 @@
+<!--<div class="container-fixed">
+    <fieldset>
+        <legend>{{userprofile.firstName}} {{userprofile.lastName}}</legend>
+        
+        <h1>Hi, {{userprofile.firstName}} {{userprofile.lastName}}</h1>
+        <a href="{{userprofile.publicProfileUrl}}" target="_blank"> 
+            <img class="img-polaroid" ng-src="{{userprofile.pictureUrl}}"/>
+        </a>
+        <br>
+        <b>Summary</b>: {{userprofile.summary}}
+        <b>Headline</b>:{{userprofile.headline}}
+        <b></b>
+    </fieldset>
+</div>-->
+	
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well well-sm">
+                <div class="row" style="padding-left:40px">
+                    <div class="col-sm-6 col-md-2">
+                        <img ng-src="{{userprofile.pictureUrl}}" class="img-rounded img-responsive" height="200" width="200" />
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <h4>{{userprofile.firstName}} {{userprofile.lastName}}</h4>
+                        <small><cite title="{{userprofile.location.name}}">{{userprofile.location.name}}</cite></small>
+                        <p>
+                            {{userprofile.emailAddress}}
+                            <br />
+                            <a href="{{userprofile.publicProfileUrl}}">{{userprofile.publicProfileUrl}}</a>
+                            <br /></p>
+                        <p>{{userprofile.summary}}
+                        
+                        </p>
+                        
+                        
+                        
+                        <!-- Split button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">
+                                Social</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span><span class="sr-only">Social</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="https://plus.google.com/+Jquery2dotnet/posts">Google +</a></li>
+                                <li><a href="https://www.facebook.com/jquery2dotnet">Facebook</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

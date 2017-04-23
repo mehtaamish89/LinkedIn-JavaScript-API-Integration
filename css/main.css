@@ -1,0 +1,23 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.container-fixed{
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+#map {
+        height: 400px;
+        width: 400px;
+       }
